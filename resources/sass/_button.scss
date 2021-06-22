@@ -1,0 +1,35 @@
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 12px 40px;
+    border-radius: 30px;
+}
+
+.btn-options {
+    padding: 0;
+    width: $option-button-size;
+    height: $option-button-size;
+    background-color: $light;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 0 !important;
+    border: 0;
+    border-radius: 50%;
+    width: $option-button-size;
+    line-height: $option-button-size - 2; // due to download icon has extra space and this fix specific to icon
+    background-color: $light;
+}
+
+.btn-action {
+    padding: 0;
+    width: $option-button-size;
+    height: $option-button-size;
+    background-color: $light;
+    border-radius: 0px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

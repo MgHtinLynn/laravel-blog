@@ -1,0 +1,42 @@
+table {
+    thead.cop-table {
+        background-color: $grey;
+        color: $dark;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 21px;
+        border: 0 !important;
+
+        th {
+            border: 0 !important;
+        }
+    }
+
+    tbody.cop-table {
+        line-height: 64px;
+
+        td {
+            border: 0 !important;
+            border-bottom: 1px solid $grey !important;
+        }
+    }
+}
+
+.table-pagination-item {
+    border-radius: 0 !important;
+
+    .page-link {
+        height: 45px;
+        border-radius: 0 !important;
+        padding: 0.7rem 1rem !important;
+        border: 1px solid $grey !important;
+    }
+}
+
+.table-perPage-selector {
+    border-radius: 0;
+    border: 1px solid $grey;
+    //padding: 0.7rem 1rem !important;
+    height: 45px;
+}

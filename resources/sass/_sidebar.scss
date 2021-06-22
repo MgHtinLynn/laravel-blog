@@ -1,0 +1,97 @@
+@media (min-width: 992px) {
+  .wrapper {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 99vw;
+  }
+
+  .sidebar {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100vh;
+    z-index: 5;
+    width: 260px;
+
+    background: $normal;
+    color: white;
+  }
+
+  .content {
+    width: calc(100% - 280px);
+    position: relative;
+    float: right;
+  }
+  
+  .links ul li {
+    margin: 15px 10px;
+    border-radius: 3px;
+    user-select: none !important;
+
+    &:hover {
+      transition: background-color ease .3s;
+      background: $hover;
+    }
+
+    &:active {
+      background: $active;
+    }
+  }
+
+  .links ul li a {
+    padding: 15px 15px;
+    display: block;
+    color: white;
+    font-family: "telenormedium";
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .link-active {
+    transition: background-color ease .3s;
+    background: $active;
+    border-radius: 3px;
+  }
+  
+  .header {
+    text-align: center;
+
+    .sidebar-logo {
+      user-select: none;
+      img {
+        height: 52px;
+      }
+    }
+
+    a.brand-name {
+      font-family: "telenormedium";
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      vertical-align: middle;
+      color: white;
+      letter-spacing: 1px;
+      
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  .rank {
+    text-align: center;
+    font-family: "telenormedium";
+    font-size: 18px;
+    line-height: 1.8em;
+  }
+}
+
+@media all and (max-height: 725px) {
+  .sidebar {
+    overflow-y: auto !important;
+  }
+}

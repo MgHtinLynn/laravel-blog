@@ -1,0 +1,11 @@
+// override bootstrap dropdown
+.dropdown-menu {
+    border-radius: 0;
+    left: unset;
+    right: 0;
+    box-shadow: 0 2px 10px 0 rgba(133,133,133,0.5);
+
+    .dropdown-item {
+        line-height: 64px;
+    }
+}

@@ -1,0 +1,56 @@
+.wm-option-container {
+    min-width: $option-button-size;
+    height: $option-button-size;
+
+    button {
+        box-shadow: $option-button-shadow;
+    }
+}
+
+.options-btn-icon {
+    width: $option-button-icon-size;
+}
+
+div.search-input-group {
+    width: 270px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    input {
+        max-width: 270px;
+        caret-color: $primary;
+        height: $option-button-size !important;
+        border-radius: 30px;
+        font-family: 'Roboto', sans-serif;
+        padding: 8px 50px 8px 20px;
+        box-shadow: $option-button-shadow;
+        letter-spacing: 0.5px;
+
+        &:focus {
+            -webkit-box-shadow:$option-button-shadow;
+            box-shadow: $option-button-shadow;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        width: $option-button-icon-size;
+        top: ($option-button-size - $option-button-icon-size) / 2;
+    }
+}
+
+.filter-checkbox-group {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    min-width: 180px;
+    box-shadow: $option-button-shadow;
+
+    input {
+        width: 20px;
+        height: 20px;
+    }
+}

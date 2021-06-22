@@ -1,0 +1,61 @@
+.app-body {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.c-sidebar-nav-item {
+    a {
+        color: #0a0c0d !important;
+    }
+}
+
+.c-sidebar-nav {
+    margin-top: 3rem !important;
+}
+
+.left-menu-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .side-bar-shadow {
+        box-shadow: 2px 0 5px 2px #eeeeee !important;
+    }
+}
+
+.c-sidebar .c-sidebar-nav-link, .c-sidebar .c-sidebar-nav-dropdown-toggle {
+    color: #333333 !important;
+    text-transform: uppercase;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+    background-color: rgba(0, 145, 210, 0.2) !important;
+}
+
+.dropdown-menu {
+    min-width: 6rem !important;
+}
+
+.invalid-alert {
+    font-size: 80%;
+    color: #e3342f;
+    margin-top: 0.25rem;
+}
+
+.red-label {
+    color: red !important;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.logout-link {
+    text-transform: uppercase;
+    color: #333333 !important;
+}

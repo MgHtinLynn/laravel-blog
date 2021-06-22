@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//fontawesome
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+// bootstrap-vue
+@import '~bootstrap-vue/src/index.scss';
+
+@import "~@coreui/coreui/scss/coreui";
+
+@import "custom";
+
+@import "title";
+//@import "button";
+@import "options";
+@import "util";
+@import "table";
+@import "dropdown";
+
+// Admin SCSS
+@import "admin";
+
