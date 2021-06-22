@@ -77,7 +77,13 @@ For Migration
 ```console
 cp .env.example .env
 docker exec -it app bash
+php artisan key:generate
 php artisan migrate --seed
+```
+
+For JS Integration for local
+```console
+npm install && npm run dev 
 ```
 
 There is admin account after migration
