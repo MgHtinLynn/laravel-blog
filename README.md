@@ -1,4 +1,4 @@
-# laravel-blog
+# Blog
 Blog Management System with Laravel 8 + API + VueJS + Fortify
 
 # Setup
