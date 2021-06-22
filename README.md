@@ -79,6 +79,7 @@ cp .env.example .env
 docker exec -it app bash
 php artisan key:generate
 php artisan migrate --seed
+php artisan storage:link
 ```
 
 For JS Integration for local
