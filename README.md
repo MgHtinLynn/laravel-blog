@@ -1,5 +1,5 @@
-# laravel-uber-pigeon
-Uber Pigeon Delivery System with Laravel 8 + API + VueJS + Fortify
+# laravel-blog
+Blog Management System with Laravel 8 + API + VueJS + Fortify
 
 # Setup
 
@@ -20,14 +20,17 @@ https://laravel.com/docs/8.x/valet
 - clone repo from GitHub
 
 ```console
-git clone https://github.com/MgHtinLynn/Uber-pigeon.git
-cd Uber-pigeon
+git clone https://github.com/MgHtinLynn/laravel-blog.git
+cd laravel-blog
 ```
 
 Link valet certificate with nginx proxy
 ```console
 ln -s /Users/htinlynn/.config/valet/Certificates {dir of repo clone}/data/
-ln -s /Users/htinlynn/.config/valet/Certificates /Users/htinlynn/Code/htinlynn/Uber-pigeon/data/
+```
+For me:
+```
+ln -s /Users/htinlynn/.config/valet/Certificates /Users/htinlynn/Code/htinlynn/laravel-blog/data/
 ```
 
 Link Valet With Https URL
@@ -37,7 +40,7 @@ valet secure {host-name}
 
 For Example
 ```console
-valet secure uber-pigeon
+valet secure blog
 ```
 
 That will generate https certificate for your repo
@@ -65,7 +68,7 @@ docker-compose down
 You can call your host name to web-browser
 
 In my mac
-https://Uber-pigeon.test/
+https://blog.test/
 
 if different dir, need to update docker-compose file.
 
@@ -79,18 +82,16 @@ php artisan migrate --seed
 
 There is admin account after migration
 
-- uberPigeonAdmin@mailinator.com
+- adminBlog@mailinator.com
 - password
 
-For API Testing, There is a file . You can import in your postman.
-- Uber-Pigeon.postman_collection.json
-
-
-For Feature Testing. You can run with 
-```consoles
-docker exec -it app bash
-php artisan test
-```
+Feature List 
+- Laravel (back-end) / Vue.js (frontend) / Ckeditor (package)
+- CRUD (list, add, edit, delete)
+- CRUD List (all added item)
+- CRUD Add form ( form , 2 fields needed, 1st field - Title, 2nd field - Body/Content - using CKEDITOR)
+- CRUD Delete (simple delete with confirmation)
+- CRUD Update (form and existing value of this selected item)
 
 Enjoy your setup.
 
